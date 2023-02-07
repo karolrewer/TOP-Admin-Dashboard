@@ -1,0 +1,58 @@
+@font-face {
+    src: url(/fonts/Roboto-Regular.ttf);
+    font-family: roboto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.all {
+    width: 100vw;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
+    grid-template-rows: 2.5fr 3fr 3fr 3fr;
+    grid-template-areas: 
+        "sidebar header header header"
+        "sidebar projects projects projects"
+        "sidebar projects projects projects"
+        "sidebar projects projects projects";
+    border: 1px solid black;
+}
+
+.left-nav {
+    grid-area: sidebar;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(13, 5.5vh);
+    background-color: #0ea5e9;
+
+}
+
+.left-nav > div {
+    background-color: #0ea5e9;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Roboto-Regular;
+}
+
+
+
+.top {
+    grid-area: header;
+    border: 1px solid black;
+
+}
+
+.your-projects {
+    grid-area: projects;
+    border: 1px solid black;
+
+
+}
+
